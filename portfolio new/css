@@ -1,0 +1,25 @@
+
+#about::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgb( 32,32,32);
+    background: linear-gradient(180deg, rgba(0,0,0,0.375) 60%, rgb(0,0,0) 100%);   
+}
+
+
+#about::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgb( 32,32,32);
+    background: linear-gradient(0deg, rgba(0,0,0,0,.375) 60%, rgb(0,0,0) 100%);
+    }

@@ -1,0 +1,963 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000;
+}
+
+::selection{
+    background-color: #3330fa;
+    color: #fff;
+}
+
+/*====Navegação==============================================*/
+
+.navegação{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 200;
+    background-image: linear-gradient(180deg, #000, rgba(0,0,0,0.8) 59%, transparent);
+}
+
+.C-logo{
+    max-width: 950px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo{
+    color: #fff;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-family: "Dancing Script";
+}
+
+/*====Main==============================================*/
+
+#main{
+    max-width: 950px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 90px auto 20px auto;
+    border-bottom: 1px solid rgba(15,15,15);
+    padding: 60px;
+}
+
+.main-image{
+    max-width: 350px;
+    max-height: 700px;
+    width: 100%;
+}
+
+.main-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.main-text{
+    max-width: 400px;
+    position: relative;
+
+}
+
+.main-text::before{
+    content: 'Data Analyst';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+    font-size: 7rem;
+    color: #299dff28;
+    line-height: 7rem;
+    font-weight: 700;
+    z-index: -1;
+}
+
+.main-text strong{
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.65rem;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: flex-start;
+    font-family: "poppins";
+}
+
+.main-text h1{
+    color: #fff;
+    font-size: 5rem;
+    line-height: 4rem;
+    letter-spacing: 1px;
+}
+
+.main-text span{
+    color: #689af8;
+
+}
+
+.main-text p{
+    color: #9999;
+    margin:30px 0px;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.main-text a,
+.Sumario-titulo a, 
+.btn a,
+.btn-c a,
+.about-title a,
+.contato a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 6px;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #689af8;
+    padding: 10px 10px 10px 0px;
+    transition: all 508ms cubic-bezier(0.77,0,0.175,1);
+}
+.main-text a:hover,
+.Sumario-titulo a:hover,
+.btn a:hover,
+.btn-c a:hover,
+.about-title a:hover,
+.contato a:hover{
+    padding: 10px;
+    background-color: rgba(104,154,248,0.1);
+}
+
+
+
+/*========Sumario==========================================*/
+
+
+
+
+
+#Sumario{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 950px;
+    width: 100%;
+    margin: 80px auto 0px auto;
+    flex-wrap: wrap;
+
+}
+
+.Sumario-titulo{
+    max-width: 400px;
+    width: 100%;
+}
+
+.Sumario-titulo strong{
+    color: #689af8;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.Sumario-titulo h2{
+    color: #fff;
+    font-size: 2.37rem;
+    line-height: 2.9rem;
+    margin: 20px 0px;
+}
+
+
+.sumario-detalhes{
+    max-width: 470px;
+    width: 100%;
+    border: 1px solid rgba(15,15,15);
+    padding: 20px;
+}
+
+.sumario-detalhes p{
+    color: #9999;
+    font-size: 1rem;
+}
+
+
+/*====languages==============================================*/
+
+#languages{
+    display: grid;/*=====Display-flex-first*/
+    grid-template-columns: 1fr 1fr; /*====justify-content: center -first*/
+    grid-gap: 30px; /*=====align-items: center-first*/
+    width: 100%;
+    max-width: 950px;
+    margin: 80px auto 50px auto;
+    padding-bottom: 80px;
+    border-bottom: 1px solid rgba(15,15,15);
+    
+}
+
+.Language-Box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.Language-Box h3{
+    font-size: 1.3rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.Language-Box span{
+    color: #689af8;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 1.3rem;
+}
+
+.Language-Box ul{
+    display: flex;
+    background-color: #050505;
+    padding: 10px 20px;
+    border: 1px solid rgba(39,39,39,0.4);
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+
+.Language-Box ul li{
+    color: #dadada;
+    margin-right: 20px;
+    margin-top: 4px;
+
+}
+
+
+/*====Processo==============================================*/
+
+#Processo{
+    width: 100%;
+    max-width: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(15,15,15);
+    
+}
+
+.processo-title{
+    width: 100%;
+}
+
+.processo-title h3, 
+.projetos-title{
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.processo-title h3 span,
+.projetos-title span{
+    color: #689af8;
+    font-size: 1.7rem;
+}
+
+.Caixa-processo{
+    display: grid; /*=====Display-flex-first*/
+    grid-template-columns: 1fr 1fr 1fr;/*====justify-content: center -first*/
+    grid-gap: 100px; /*=====align-items: center-first*/
+    width: 100%;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.caixa{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    
+}
+
+.caixa strong{
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.Caixa-processo ul{
+    margin-top: 20px;
+        
+}
+
+.Caixa-processo ul li{
+    color:#fff;
+    font-size: 1.0rem;
+    margin: 5px 0px;
+}
+
+.Caixa-processo span{
+    color:#299dff28 ;
+    position: absolute;
+    left: -30px;
+    top: -30px;
+    font-weight: 700;
+    font-size: 4rem;
+    z-index: -1;
+}
+
+
+/*====Projetos==============================================*/
+
+#projetos{
+    width: 100%;
+    margin: 80px auto;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+#projetos::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+    max-width: 950px;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(39,39,39,0.4);
+
+}
+
+.projetos-title{
+    width: 100%;
+    max-width: 950px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.Caixa-projetos{
+    width: 100%; /*===width-500px-first===*/
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #000000;
+    position: relative;
+   
+}
+
+.Caixa-projetos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.p-overlayer{
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: rgba(32,32,32,0.5);
+    background: linear-gradient(180deg, rgba(0,0,0,0,)65%, rgba(0,0,0,0.85) 100%);
+    padding: 30px;
+    transition: all ease 0.6s;
+    
+}
+
+.p-overlayer strong{
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 2px;
+    border-left: 4px solid #689af8;
+    line-height: 30px;
+    padding-left: 20px;
+    font-weight: 700;
+}
+
+.Caixa-projetos:hover .p-overlayer{
+    top: 0px;
+}
+
+
+.mySwiper{
+    margin: 50px 0px;
+    max-width: 1050px;
+}
+
+.slider-btn{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0px 10px auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    position: static !important;
+    transform: translate(0,0);
+    margin: 10px 0px 0px 10px !important;
+}
+
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    font-size: 20px !important;
+    font-weight: 800;
+    color: #fff;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/*====Carreira==============================================*/
+
+#education{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 950px;
+    width: 100%;
+    margin: 20px auto;
+    position: relative;
+}
+
+#education::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: 1px;
+    border-color: #141414;
+}
+
+.carreira h3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 3.1rem;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+
+.carreira span{
+    color: #689af8;
+    font-size: 1.6rem;
+    margin-left: 10px;
+}
+
+
+.c-b-container{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.box h4{
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-left: 3px solid #689af8;
+    padding-left: 10px;
+    line-height: 1.3rem;
+
+}
+
+.box strong{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.box span{
+    color: #6d6d6d;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    margin-top: 6px;
+}
+
+.btn-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px auto 50px auto;
+    padding-bottom: 50px;
+    max-width: 950px;
+    border-bottom: 1px solid rgba(39,39,39,0.4);
+}
+
+
+/*====about==============================================*/
+
+#about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    padding: 50px 0px;
+    background-image: url(about-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   
+}
+
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 950px;
+    width: 100%;
+}
+
+
+.about-title{
+    width: 380px;
+}
+
+.about-title strong{
+    color: #689af8;
+    font-size: 0.87rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.about-title h3{
+    color: #fff;
+    font-size: 2.1rem;
+    margin: 15px 0px;
+    line-height: 2.8rem;
+}
+
+.about-detalhes{
+    width: 465px;
+}
+
+.about-detalhes p{
+    color: #9999;
+    margin: 10px 0px;
+}
+
+/*====Contato==============================================*/
+
+#contato{
+    width: 100%;
+    max-width: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.contato strong{
+    color: #689af8;
+    font-size: 0.87rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+
+.contato h3{
+    color: #fff;
+    font-size: 2.37rem;
+    letter-spacing: 1px;
+}
+
+.contato p{
+    color: #9999;
+    max-width: 640px;
+    margin: 15px 0px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.contato p b{
+    color: #fff;
+    font-weight: 500;
+}
+
+/*====Footer==============================================*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 950px;
+    width: 100%;
+    margin: 100px auto 0px auto;
+    padding: 20px;
+}
+
+footer span{
+    color: #6d6d6d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+footer .footer-logo{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 1.3rem;
+    font-family: "Dancing Script";
+}
+
+
+@media screen and (max-width:375px){
+
+
+    /*========Main==========================================*/
+    
+    .main-text strong{
+        font-size: 1rem;
+    }
+    
+    .main-text h1{
+        font-size: 3.2rem;
+    }
+
+    .main-text::before{
+        font-size: 3.2rem;
+
+    }
+
+    /*========Sumario==========================================*/
+
+
+     .Sumario-titulo strong{
+         display: flex;
+         justify-content: center;
+         text-align: center;
+     }
+
+     .Sumario-titulo h2{
+         font-size: 1.6rem;
+         display: flex;
+         justify-content: center;
+         text-align: center;
+     }
+
+     .Sumario-titulo a{
+         display: flex;
+         justify-content: center;
+         text-align: center;
+     }
+
+     .sumario-detalhes p{
+         text-align: center;
+     }
+
+
+      /*========Languagem==========================================*/
+
+      .languages{
+          padding: 25px;
+      }
+
+
+ /*========Processo==========================================*/
+
+      #Processo{
+          text-align: center;
+          
+      }
+
+      .Caixa-processo{
+          text-align: center;
+          margin-left: 40%;
+         
+      }
+
+      /*========Projetos==========================================*/
+
+
+      #projetos h3{
+          font-size: 2.5rem;
+          margin-left: 5%;
+          
+      }
+
+      .swiper-slide{
+          padding: 20px;
+      }
+
+
+      /*========education==========================================*/
+
+      .carreira h3{
+          font-size: 1.2rem;
+      }
+
+     .carreira{
+        padding-left: 5%;
+         
+     }
+
+/*========about==========================================*/
+
+
+     .about{
+         padding: 100px;
+         
+
+     }
+
+     .about-container h3{
+         font-size: 0.8rem;
+        
+
+        }
+
+        .about-detalhes p{
+            font-size: 0.5rem;
+            color: #fff;
+        }
+
+        .about-title{
+            text-align: center;
+        }
+
+        .about-title h3{
+            line-height: 15px;
+        
+        }
+
+        .about-detalhes p{
+            text-align: center;
+        }
+
+        .about-title a{
+            font-size: 0.6rem;
+        }
+
+
+        /*========contato==========================================*/
+
+
+        .contato{
+            padding: 5%;
+        }
+
+        .contato h3{
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        
+    
+}
+
+
+
+@media screen and (max-width:414px){
+
+
+    /*========Main==========================================*/
+    
+    .main-text strong{
+        font-size: 1rem;
+    }
+    
+    .main-text h1{
+        font-size: 3.2rem;
+    }
+
+    .main-text::before{
+        font-size: 3.2rem;
+
+    }
+
+    /*========Sumario==========================================*/
+
+
+     .Sumario-titulo strong{
+         display: flex;
+         justify-content: center;
+         text-align: center;
+     }
+
+     .Sumario-titulo h2{
+         font-size: 1.6rem;
+         display: flex;
+         justify-content: center;
+         text-align: center;
+     }
+
+     .Sumario-titulo a{
+         display: flex;
+         justify-content: center;
+         text-align: center;
+     }
+
+     .sumario-detalhes p{
+         text-align: center;
+     }
+
+
+      /*========Languagem==========================================*/
+
+      .languages{
+          padding: 25px;
+      }
+
+
+ /*========Processo==========================================*/
+
+      #Processo{
+          text-align: center;
+          
+      }
+
+      .Caixa-processo{
+          text-align: center;
+          margin-left: 40%;
+         
+      }
+
+      /*========Projetos==========================================*/
+
+
+      #projetos h3{
+          font-size: 2.5rem;
+          margin-left: 5%;
+          
+      }
+
+      .swiper-slide{
+          padding: 20px;
+      }
+
+
+      /*========education==========================================*/
+
+      .carreira h3{
+          font-size: 1.2rem;
+      }
+
+     .carreira{
+        padding-left: 5%;
+         
+     }
+
+/*========about==========================================*/
+
+
+     .about{
+         padding: 100px;
+         
+
+     }
+
+     .about-container h3{
+         font-size: 0.8rem;
+        
+
+        }
+
+        .about-detalhes p{
+            font-size: 0.5rem;
+            color: #fff;
+        }
+
+        .about-title{
+            text-align: center;
+        }
+
+        .about-title h3{
+            line-height: 15px;
+        
+        }
+
+        .about-detalhes p{
+            text-align: center;
+        }
+
+        .about-title a{
+            font-size: 0.6rem;
+        }
+
+
+        /*========contato==========================================*/
+
+
+        .contato{
+            padding: 5%;
+        }
+
+        .contato h3{
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        
+    
+}
+
+
+
+
+
